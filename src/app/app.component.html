@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div>Value from service = {{ displayObservable$ | async }}</div>
+
+<p>
+  <button
+    type="button"
+    class="btn btn-primary"
+    id="btnCheckDate"
+    (click)="sendValue($event)"
+  >
+    Send a value to service
+  </button>
+</p>
